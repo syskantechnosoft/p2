@@ -1,0 +1,27 @@
+<div>
+    <div>
+        <h2 align="center">Account Details</h2>
+    </div>
+    <div>
+        <table class="table table-info table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th> ID </th>
+                    <th> AccountNumber </th>
+                    <th> AccountType </th>
+                    <th> Minimum Balance </th>
+                    <th> Interest Rate </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let account of accounts">
+                    <td>{{account.accountId}}</td>
+                    <td>{{account.accountNumber}}</td>
+                    <td>{{account.accountType}}</td>
+                    <td>{{account.minBalance}}</td>
+                    <td>{{account.interestRate}}</td>                 
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

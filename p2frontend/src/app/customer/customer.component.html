@@ -1,0 +1,36 @@
+<div>
+    
+    <div>
+        <h2 align="center">Customer Details</h2>
+    </div>
+    <div>
+        <table class="table table-info table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th> ID </th>
+                    <th> Name </th>
+                    <th> Email </th>
+                    <th> Mobile </th>
+                    <th> Accounts</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let customer of customers">
+                    <td>{{customer.id}}</td>
+                    <td>{{customer.name}}</td>
+                    <td>{{customer.email}}</td>
+                    <td>{{customer.mobile}}</td>
+                    <td> <a> accounts</a> </td>
+                </tr>
+                <tr *ngIf="customer!=null">
+                    <td>{{customer.id}}</td>
+                    <td>{{customer.name}}</td>
+                    <td>{{customer.email}}</td>
+                    <td>{{customer.mobile}}</td>
+                    <td> <a> accounts</a> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
